@@ -32,12 +32,18 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+    -- resize
+    ["<A-l>"] = { ":vertical resize +2<CR>" },
+    ["<A-h>"] = { ":vertical resize -2<CR>" },
+    ["<A-j>"] = { ":resize -2<CR>" },
+    ["<A-k>"] = { ":resize +2<CR>" },
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
   i = {
-    ["<C-j>"] = { "<ESC>"},
+    ["<C-j>"] = { "<ESC>", desc = "alias to Escape" },
   },
 }
