@@ -20,7 +20,8 @@ return {
     --
 
     -- terminal
-    ["<A-t>"] = { "<cmd>ToggleTerm direction=float<cr>", desc = "Toggle floating terminal" },
+    ["<A-t>"] = { "<cmd>ToggleTerm direction=tab<cr>", desc = "Toggle floating terminal" },
+    ["<A-f>"] = { "<cmd>ToggleTerm direction=float<cr>", desc = "Toggle floating terminal" },
     ["<A-J>"] = { "<cmd>ToggleTerm size=25 direction=horizontal<cr>", desc = "Toggle horizontal terminal" },
     ["<A-L>"] = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", desc = "Toggle vertical terminal" },
 
@@ -48,7 +49,8 @@ return {
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
-    ["<A-t>"] = { "<cmd>ToggleTerm direction=float<cr>", desc = "toggle floating terminal" },
+    ["<A-t>"] = { "<cmd>ToggleTerm direction=tab<cr>", desc = "Toggle floating terminal" },
+    ["<A-f>"] = { "<cmd>ToggleTerm direction=float<cr>", desc = "Toggle floating terminal" },
     ["<A-J>"] = { "<cmd>ToggleTerm size=25 direction=horizontal<cr>", desc = "toggle horizontal terminal" },
     ["<A-L>"] = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", desc = "toggle vertical terminal" },
   },

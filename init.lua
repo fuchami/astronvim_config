@@ -81,6 +81,9 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
+
+    -- use fig in toggleterm
+    vim.fn.setenv("FIG_TERM", nil)
   end,
 
   -- add new user interface icon
