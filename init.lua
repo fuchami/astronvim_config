@@ -31,12 +31,6 @@ return {
   -- https://astronvim.com/Recipes/status#replicate-nvchad-statusline
   -- modify variables used by heirline but not defined in the setup call directly
   heirline = {
-    -- define the separators between each section
-    separators = {
-      left = { "", " " }, -- separator for the left side of the statusline
-      right = { " ", "" }, -- separator for the right side of the statusline
-      tab = { "", "" },
-    },
     -- add new colors that can be used by heirline
     colors = function(hl)
       local get_hlgroup = require("astronvim.utils").get_hlgroup
@@ -53,14 +47,6 @@ return {
       hl.folder_icon_bg = get_hlgroup("Error").fg
       return hl
     end,
-    attributes = {
-      mode = { bold = true },
-    },
-    icon_highlights = {
-      file_icon = {
-        statusline = false,
-      },
-    },
   },
 
   lsp = {
