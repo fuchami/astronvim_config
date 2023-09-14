@@ -17,3 +17,8 @@ vim.api.nvim_create_autocmd("filetype", {
     vim.opt.softtabstop = 2
   end,
 })
+
+vim.opt.autoindent = true
+vim.opt.smartindent = true
+
+vim.opt.relativenumber = false
