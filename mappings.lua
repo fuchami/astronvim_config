@@ -45,6 +45,9 @@ return {
     ["<A-h>"] = { ":vertical resize -2<CR>" },
     ["<A-j>"] = { ":resize -2<CR>" },
     ["<A-k>"] = { ":resize +2<CR>" },
+
+    -- Horizontal Split
+    ["-"] = { "<cmd>split<cr>" },
   },
   t = {
     -- setting a mapping to false will disable it
