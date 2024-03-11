@@ -11,12 +11,11 @@ vim.opt.smartindent = true
 vim.opt.relativenumber = false
 
 vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
-  {
-    pattern = "*.hql",
-    command = "set filetype=sql",
-  },
-  {
-    pattern = "*.tpl",
-    command = "set filetype=sql",
-  },
+  pattern = "*.hql",
+  command = "set filetype=sql",
+})
+
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+  pattern = "*.tpl",
+  command = "set filetype=sql",
 })
