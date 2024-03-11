@@ -9,3 +9,14 @@ vim.opt.autoindent = true
 vim.opt.smartindent = true
 
 vim.opt.relativenumber = false
+
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+  {
+    pattern = "*.hql",
+    command = "set filetype=sql",
+  },
+  {
+    pattern = "*.tpl",
+    command = "set filetype=sql",
+  },
+})
