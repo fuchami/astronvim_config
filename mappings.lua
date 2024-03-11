@@ -47,7 +47,7 @@ return {
     ["<A-k>"] = { ":resize +2<CR>" },
 
     -- Horizontal Split
-    ["-"] = { "<cmd>split<cr>" },
+    ["-"] = { ":split<CR>", desc = "Horizontal Split" },
   },
   t = {
     -- setting a mapping to false will disable it
