@@ -40,14 +40,16 @@ return {
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
 
+    -- window mapping
+    ["-"] = { ":split<CR>", desc = "Horizontal Split" },
+    ["<C-w>x"] = { "<C-w>c", desc = "Close Window" },
+    ["<C-w>s"] = { "<C-w>s", desc = "Spaw Current with next" },
+
     -- resize
     ["<A-l>"] = { ":vertical resize +2<CR>" },
     ["<A-h>"] = { ":vertical resize -2<CR>" },
     ["<A-j>"] = { ":resize -2<CR>" },
     ["<A-k>"] = { ":resize +2<CR>" },
-
-    -- Horizontal Split
-    ["-"] = { ":split<CR>", desc = "Horizontal Split" },
   },
   t = {
     -- setting a mapping to false will disable it
