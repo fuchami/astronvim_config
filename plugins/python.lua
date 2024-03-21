@@ -1,5 +1,5 @@
+-- https://github.com/AstroNvim/astrocommunity/tree/main/lua/astrocommunity/pack/python-ruff
 local utils = require "astronvim.utils"
-
 return {
   {
     "nvim-treesitter/nvim-treesitter",
@@ -11,7 +11,9 @@ return {
   },
   {
     "williamboman/mason-lspconfig.nvim",
-    opts = function(_, opts) opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, { "pyright" }) end,
+    opts = function(_, opts)
+      opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, { "pyright", "ruff_lsp" })
+    end,
   },
   {
     "jay-babu/mason-null-ls.nvim",
