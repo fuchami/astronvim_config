@@ -4,9 +4,20 @@
 
 ---@type LazySpec
 return {
-  "AstroNvim/astrocommunity",
-  { import = "astrocommunity.pack.lua" },
-
   -- import/override with your plugins folder
+  "AstroNvim/astrocommunity",
+
+  -- ui
+  { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
+  { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
+  { import = "astrocommunity.recipes.heirline-vscode-winbar" },
+
+  -- editing-support
   { import = "astrocommunity.indent.indent-rainbowline" },
+  { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
+
+  -- pack
+  { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.python-ruff" },
+  { import = "astrocommunity.pack.sql" },
 }
