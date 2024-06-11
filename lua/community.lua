@@ -22,5 +22,5 @@ return {
   -- pack
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.python-ruff" },
-  { import = "astrocommunity.pack.sql" },
+  -- { import = "astrocommunity.pack.sql" },
 }
