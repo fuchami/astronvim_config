@@ -2,8 +2,6 @@
 -- things like custom filetypes. This just pure lua so anything that doesn't
 -- fit in the normal config locations above can go here
 
-vim.opt.relativenumber = false
-
 -- Set up custom filetypes
 vim.filetype.add {
   extension = {
