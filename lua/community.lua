@@ -7,7 +7,7 @@ return {
   -- import/override with your plugins folder
   "AstroNvim/astrocommunity",
 
-  -- ui recipes
+  -- recipes
   { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
   { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
   { import = "astrocommunity.recipes.heirline-vscode-winbar" },
@@ -22,5 +22,5 @@ return {
   -- pack
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.python-ruff" },
-  -- { import = "astrocommunity.pack.sql" },
+  { import = "astrocommunity.pack.sql" },
 }
