@@ -16,11 +16,17 @@ return {
   { import = "astrocommunity.indent.indent-rainbowline" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
 
+  -- markdown
+  { import = "astrocommunity.markdown-and-latex.markview-nvim" },
+
+  -- git
+  { import = "astrocommunity.git.diffview-nvim" },
+  { import = "astrocommunity.git.octo-nvim" },
+
   -- lsp
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
 
   -- pack
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.python-ruff" },
-  { import = "astrocommunity.pack.sql" },
 }
