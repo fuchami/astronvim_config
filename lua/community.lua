@@ -29,4 +29,7 @@ return {
   -- pack
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.python-ruff" },
+
+  -- utility
+  { import = "astrocommunity.utility.noice-nvim" },
 }
