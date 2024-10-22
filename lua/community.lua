@@ -17,7 +17,7 @@ return {
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
 
   -- markdown
-  { import = "astrocommunity.markdown-and-latex.markview-nvim" },
+  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
 
   -- git
   { import = "astrocommunity.git.diffview-nvim" },
