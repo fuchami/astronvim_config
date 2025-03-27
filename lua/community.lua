@@ -32,4 +32,7 @@ return {
 
   -- utility
   { import = "astrocommunity.utility.noice-nvim" },
+
+  -- icon
+  { import = "astrocommunity.icon.mini-icons" },
 }
