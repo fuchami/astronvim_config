@@ -23,6 +23,9 @@ return {
   { import = "astrocommunity.git.diffview-nvim" },
   { import = "astrocommunity.git.octo-nvim" },
 
+  -- icon
+  { import = "astrocommunity.icon.mini-icons" },
+
   -- lsp
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
 
@@ -30,9 +33,9 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.python-ruff" },
 
+  -- scrolling
+  { import = "astrocommunity.scrolling.nvim-scrollbar" },
+
   -- utility
   { import = "astrocommunity.utility.noice-nvim" },
-
-  -- icon
-  { import = "astrocommunity.icon.mini-icons" },
 }
