@@ -3,6 +3,7 @@
 
 ---@type LazySpec
 return {
+  -- Editor
   {
     "neogen",
     opts = {
@@ -11,19 +12,63 @@ return {
       },
     },
   },
-  {
-    "folke/which-key.nvim",
-    opts = {
-      ---@type false | "classic" | "modern" | "helix"
-      preset = "modern",
-    },
-  },
+  -- AI
   {
     "yetone/avante.nvim",
     opts = {
       provider = "copilot",
       providers = {
         copilot = { model = "o3-mini" },
+      },
+    },
+  },
+  -- UI
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = {
+      filesystem = {
+        filtered_items = {
+          visible = true,
+          hide_dotfiles = false,
+          hide_gitignored = false,
+        },
+        -- "shallow": Don't scan into directories to detect possible empty directory a priori
+        -- "deep": Scan into directories to detect empty or grouped empty directories a priori.
+        scan_mode = "deep",
+        group_empty_dirs = true, -- when true, empty folders will be grouped together
+      },
+    },
+  },
+  {
+    "folke/which-key.nvim",
+    opts = {
+      preset = "modern",
+    },
+  },
+  {
+    "folke/snacks.nvim",
+    opts = {
+      scroll = {
+        animate = {
+          duration = { step = 10, total = 100 },
+          easing = "linear",
+        },
+        animate_repeat = {
+          delay = 100, -- delay in ms before using the repeat animation
+          duration = { step = 3, total = 30 },
+          easing = "linear",
+        },
+        filter = function(buf)
+          return vim.g.snacks_scroll ~= false
+            and vim.b[buf].snacks_scroll ~= false
+            and vim.bo[buf].buftype ~= "terminal"
+        end,
+      },
+      indent = {
+        animate = {
+          enabled = true,
+          duration = { step = 10, total = 100 },
+        },
       },
     },
   },
