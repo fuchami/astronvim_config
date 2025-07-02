@@ -18,14 +18,14 @@ return {
   is_private_machine()
       and {
         "yetone/avante.nvim",
-        opts = is_private_machine() and {
+        opts = {
           provider = "copilot",
           providers = {
             copilot = { model = "o3-mini" },
           },
         },
       }
-    or {},
+    or nil,
   -- UI
   {
     "nvim-neo-tree/neo-tree.nvim",
