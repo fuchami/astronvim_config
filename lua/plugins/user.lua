@@ -15,15 +15,17 @@ return {
     },
   },
   -- AI
-  {
-    "yetone/avante.nvim",
-    opts = is_private_machine() and {
-      provider = "copilot",
-      providers = {
-        copilot = { model = "o3-mini" },
-      },
-    } or {},
-  },
+  is_private_machine()
+      and {
+        "yetone/avante.nvim",
+        opts = is_private_machine() and {
+          provider = "copilot",
+          providers = {
+            copilot = { model = "o3-mini" },
+          },
+        },
+      }
+    or {},
   -- UI
   {
     "nvim-neo-tree/neo-tree.nvim",
