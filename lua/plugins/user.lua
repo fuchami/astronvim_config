@@ -1,6 +1,8 @@
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- Here are some examples:
 
+local function is_private_machine() return os.getenv "NVIM_PROFILE" == "private" end
+
 ---@type LazySpec
 return {
   -- Editor
@@ -15,12 +17,12 @@ return {
   -- AI
   {
     "yetone/avante.nvim",
-    opts = {
+    opts = is_private_machine() and {
       provider = "copilot",
       providers = {
         copilot = { model = "o3-mini" },
       },
-    },
+    } or {},
   },
   -- UI
   {
