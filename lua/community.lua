@@ -42,6 +42,9 @@ return {
   -- scrolling
   { import = "astrocommunity.scrolling.nvim-scrollbar" },
 
+  -- indent
+  { import = "astrocommunity.indent.indent-rainbowline" },
+
   -- utility
   { import = "astrocommunity.utility.noice-nvim" },
 }

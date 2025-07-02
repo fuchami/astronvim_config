@@ -65,10 +65,7 @@ return {
         end,
       },
       indent = {
-        animate = {
-          enabled = true,
-          duration = { step = 10, total = 100 },
-        },
+        enabled = true,
       },
     },
   },
