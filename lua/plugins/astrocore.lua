@@ -59,6 +59,10 @@ return {
       n = {
         -- second key is the lefthand side of the map
 
+        -- navigate buffer tabs
+        ["L"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
+        ["H"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
+
         -- window mapping
         ["-"] = { ":split<CR>", desc = "Horizontal Split" },
         ["<C-w>x"] = { "<C-w>c", desc = "Close Window" },
