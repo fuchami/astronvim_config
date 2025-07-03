@@ -21,6 +21,7 @@ return {
   { import = "astrocommunity.recipes.heirline-vscode-winbar" },
 
   -- editing-support
+  { import = "astrocommunity.editing-support.dial-nvim" },
   { import = "astrocommunity.editing-support.neogen" },
 
   -- markdown
@@ -38,7 +39,7 @@ return {
   -- pack
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.python-ruff" },
-  -- { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.markdown", enabled = false },
 
   -- scrolling
   { import = "astrocommunity.scrolling.nvim-scrollbar" },
