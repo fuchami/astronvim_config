@@ -37,7 +37,7 @@ return {
   -- pack
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.python-ruff" },
-  { import = "astrocommunity.pack.markdown" },
+  -- { import = "astrocommunity.pack.markdown" },
 
   -- scrolling
   { import = "astrocommunity.scrolling.nvim-scrollbar" },

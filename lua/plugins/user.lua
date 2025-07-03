@@ -25,7 +25,7 @@ return {
           },
         },
       }
-    or nil,
+    or {},
   -- UI
   {
     "nvim-neo-tree/neo-tree.nvim",
