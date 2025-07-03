@@ -14,6 +14,7 @@ return {
   { import = "astrocommunity.completion.avante-nvim" },
 
   -- recipes
+  { import = "astrocommunity.recipes.auto-session-restore" },
   { import = "astrocommunity.recipes.cache-colorscheme" },
   { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
   { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
