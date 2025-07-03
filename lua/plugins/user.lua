@@ -23,6 +23,12 @@ return {
           providers = {
             copilot = { model = "o3-mini" },
           },
+          mappings = {
+            sidebar = {
+              switch_windows = "<C-j>",
+              reverse_switch_windows = "<C-k>",
+            },
+          },
         },
       }
     or {},
