@@ -29,6 +29,7 @@ return {
 
   -- git
   { import = "astrocommunity.git.diffview-nvim" },
+  { import = "astrocommunity.git.octo-nvim" },
 
   -- icon
   { import = "astrocommunity.icon.mini-icons" },
