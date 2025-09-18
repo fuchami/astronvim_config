@@ -1,7 +1,7 @@
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- Here are some examples:
 
-local function is_private_machine() return os.getenv "NVIM_PROFILE" == "private" end
+local function is_private_machine() return os.getenv "NVIM_PROFILE" == "private" or false end
 
 ---@type LazySpec
 return {
@@ -20,9 +20,6 @@ return {
         "yetone/avante.nvim",
         opts = {
           provider = "copilot",
-          providers = {
-            copilot = { model = "o3-mini" },
-          },
           mappings = {
             sidebar = {
               switch_windows = "<C-j>",
@@ -45,7 +42,7 @@ return {
         -- "shallow": Don't scan into directories to detect possible empty directory a priori
         -- "deep": Scan into directories to detect empty or grouped empty directories a priori.
         scan_mode = "deep",
-        group_empty_dirs = true, -- when true, empty folders will be grouped together
+        group_empty_dirs = false, -- when true, empty folders will be grouped together
       },
     },
   },
