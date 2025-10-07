@@ -44,6 +44,13 @@ return {
         scan_mode = "deep",
         group_empty_dirs = false, -- when true, empty folders will be grouped together
       },
+      window = {
+        position = "left",
+        mappings = {
+          ["H"] = "prev_source",
+          ["L"] = "next_source",
+        },
+      },
     },
   },
   {
