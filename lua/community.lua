@@ -11,7 +11,7 @@ return {
   -- { import = "astrocommunity.colorscheme.github-nvim-theme" },
 
   -- AI
-  { import = "astrocommunity.completion.avante-nvim" },
+  { import = "astrocommunity.completion.avante-nvim", enabled = false },
 
   -- recipes
   { import = "astrocommunity.recipes.heirline-mode-text-statusline" },

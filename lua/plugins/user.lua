@@ -1,8 +1,6 @@
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- Here are some examples:
 
-local function is_private_machine() return os.getenv "NVIM_PROFILE" == "private" or false end
-
 ---@type LazySpec
 return {
   -- Editor
@@ -14,21 +12,6 @@ return {
       },
     },
   },
-  -- AI
-  is_private_machine()
-      and {
-        "yetone/avante.nvim",
-        opts = {
-          provider = "copilot",
-          mappings = {
-            sidebar = {
-              switch_windows = "<C-j>",
-              reverse_switch_windows = "<C-k>",
-            },
-          },
-        },
-      }
-    or {},
   -- UI
   {
     "nvim-neo-tree/neo-tree.nvim",
