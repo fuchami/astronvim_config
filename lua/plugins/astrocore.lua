@@ -32,6 +32,7 @@ return {
       },
       filename = {
         -- [".foorc"] = "fooscript",
+        ["user-abbrevations"] = "zsh",
       },
       pattern = {
         -- [".*/etc/foo/.*"] = "fooscript",
