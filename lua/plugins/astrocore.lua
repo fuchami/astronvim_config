@@ -32,7 +32,7 @@ return {
       },
       filename = {
         -- [".foorc"] = "fooscript",
-        ["user-abbrevations"] = "zsh",
+        ["user-abbreviations"] = "zsh",
       },
       pattern = {
         -- [".*/etc/foo/.*"] = "fooscript",
@@ -69,10 +69,10 @@ return {
         ["<C-w>x"] = { "<C-w>c", desc = "Close Window" },
 
         -- resize
-        ["<A-l>"] = { ":vertical resize +2<CR>" },
-        ["<A-h>"] = { ":vertical resize -2<CR>" },
-        ["<A-j>"] = { ":resize -2<CR>" },
-        ["<A-k>"] = { ":resize +2<CR>" },
+        ["<C-A-l>"] = { ":vertical resize +2<CR>" },
+        ["<C-A-h>"] = { ":vertical resize -2<CR>" },
+        ["<C-A-j>"] = { ":resize -2<CR>" },
+        ["<C-A-k>"] = { ":resize +2<CR>" },
       },
     },
   },
