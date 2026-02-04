@@ -9,8 +9,8 @@ return {
   ---@type AstroUIOpts
   opts = {
     -- change colorscheme
-    -- colorscheme = "github_dark_default",
-    colorscheme = "astrodark",
+    -- colorscheme = "astrodark",
+    colorscheme = "kanagawa-wave",
 
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {

@@ -8,7 +8,7 @@ return {
 
   -- colorschema
   -- { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
-  -- { import = "astrocommunity.colorscheme.github-nvim-theme" },
+  { import = "astrocommunity.colorscheme.kanagawa-nvim" },
 
   -- AI
   { import = "astrocommunity.completion.avante-nvim", enabled = false },
