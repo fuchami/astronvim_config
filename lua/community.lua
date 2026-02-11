@@ -49,4 +49,7 @@ return {
 
   -- utility
   { import = "astrocommunity.utility.noice-nvim" },
+
+  -- media
+  { import = "astrocommunity.media.image-nvim" },
 }
