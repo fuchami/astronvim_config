@@ -3,6 +3,7 @@
 return {
   "folke/sidekick.nvim",
   specs = {
+    { "AstroNvim/astroui", opts = { icons = { Sidekick = "", SidekickBrain = "󰧑" } } },
     {
       "AstroNvim/astrocore",
       ---@param opts AstroCoreOpts
@@ -37,23 +38,29 @@ return {
           desc = "Select Prompt",
         }
 
-        maps.n[prefix .. "n"] = { desc = require("astroui").get_icon("SidekickBrain", 1, true) .. "NES" }
-        maps.n[prefix .. "nt"] = {
-          function() require("sidekick.nes").toggle() end,
-          desc = "Toggle NES",
+        maps.n[prefix .. "c"] = {
+          function() require("sidekick.cli").toggle { name = "codex", focus = true } end,
+          desc = "Sidekick Toggle Codex",
         }
-        maps.n[prefix .. "ne"] = {
-          function() require("sidekick.nes").enable() end,
-          desc = "Enable NES",
-        }
-        maps.n[prefix .. "nd"] = {
-          function() require("sidekick.nes").disable() end,
-          desc = "Disable NES",
-        }
-        maps.n[prefix .. "nu"] = {
-          function() require("sidekick.nes").update() end,
-          desc = "Update Suggestions",
-        }
+
+        -- Disable NES
+        -- maps.n[prefix .. "n"] = { desc = require("astroui").get_icon("SidekickBrain", 1, true) .. "NES" }
+        -- maps.n[prefix .. "nt"] = {
+        --   function() require("sidekick.nes").toggle() end,
+        --   desc = "Toggle NES",
+        -- }
+        -- maps.n[prefix .. "ne"] = {
+        --   function() require("sidekick.nes").enable() end,
+        --   desc = "Enable NES",
+        -- }
+        -- maps.n[prefix .. "nd"] = {
+        --   function() require("sidekick.nes").disable() end,
+        --   desc = "Disable NES",
+        -- }
+        -- maps.n[prefix .. "nu"] = {
+        --   function() require("sidekick.nes").update() end,
+        --   desc = "Update Suggestions",
+        -- }
 
         maps.n["<Tab>"] = {
           function()
@@ -99,7 +106,6 @@ return {
         }
       end,
     },
-    { "AstroNvim/astroui", opts = { icons = { Sidekick = "", SidekickBrain = "󰧑" } } },
   },
   opts = {
     nes = {
