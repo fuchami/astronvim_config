@@ -48,4 +48,21 @@ return {
     event = "BufEnter",
     opts = {},
   },
+  {
+    "DrKJeff16/wezterm-types",
+    lazy = true,
+    version = false, -- Get the latest version
+  },
+  {
+    "folke/lazydev.nvim",
+    optional = true,
+    opts = function(_, opts)
+      if not opts.library then opts.library = {} end
+
+      table.insert(opts.library, {
+        path = "wezterm-types",
+        mods = { "wezterm" },
+      })
+    end,
+  },
 }
