@@ -6,7 +6,7 @@ return {
     "coder/claudecode.nvim",
     dependencies = {
       { "folke/snacks.nvim" },
-      { "AstroNvim/astroui", opts = { isons = { Claude = "󱙺" } } },
+      { "AstroNvim/astroui", opts = { icons = { Claude = "󱙺" } } },
       {
         "AstroNvim/astrocore",
         opts = function(_, opts)

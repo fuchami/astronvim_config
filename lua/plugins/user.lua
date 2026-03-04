@@ -38,7 +38,9 @@ return {
   },
   {
     "folke/which-key.nvim",
+    ---@class wk.Opts
     opts = {
+      ---@type false | "classic" | "modern" | "helix"
       preset = "modern",
     },
   },
