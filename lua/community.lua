@@ -19,6 +19,9 @@ return {
   { import = "astrocommunity.editing-support.dial-nvim" },
   { import = "astrocommunity.editing-support.neogen" },
 
+  -- file-explorer
+  { import = "astrocommunity.file-explorer.oil-nvim" },
+
   -- markdown
   { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
 
