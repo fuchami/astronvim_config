@@ -45,12 +45,6 @@ return {
     },
   },
   {
-    "Zeioth/hot-reload.nvim",
-    dependencies = "nvim-lua/plenary.nvim",
-    event = "BufEnter",
-    opts = {},
-  },
-  {
     "DrKJeff16/wezterm-types",
     lazy = true,
     version = false, -- Get the latest version
