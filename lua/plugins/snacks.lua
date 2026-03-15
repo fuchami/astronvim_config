@@ -1,6 +1,7 @@
 return {
   "folke/snacks.nvim",
   opts = {
+    ---@class snacks.scroll.Config
     scroll = {
       animate = {
         duration = { step = 10, total = 100 },
@@ -16,9 +17,20 @@ return {
       end,
     },
     ---@class snacks.indent.Config
-    ---@field enabled? boolean
     indent = {
       enabled = true,
+    },
+    ---@class snacks.gh.Config
+    gh = {},
+  },
+  keys = {
+    { "<leader>gi", function() require("snacks").picker.gh_issue() end, desc = "GitHub Issues (open)" },
+    { "<leader>gI", function() require("snacks").picker.gh_issue { state = "all" } end, desc = "GitHub Issues (all)" },
+    { "<leader>gp", function() require("snacks").picker.gh_pr() end, desc = "GitHub Pull Requests (open)" },
+    {
+      "<leader>gP",
+      function() require("snacks").picker.gh_pr { state = "all" } end,
+      desc = "GitHub Pull Requests (all)",
     },
   },
 }
