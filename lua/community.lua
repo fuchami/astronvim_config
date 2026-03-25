@@ -41,7 +41,7 @@ return {
   { import = "astrocommunity.pack.python.basedpyright" },
   { import = "astrocommunity.pack.python.ruff" },
   { import = "astrocommunity.pack.markdown", enabled = false },
-  { import = "astrocommunity.pack.sql" },
+  { import = "astrocommunity.pack.sql", enabled = false },
 
   -- scrolling
   { import = "astrocommunity.scrolling.nvim-scrollbar" },

@@ -11,6 +11,7 @@ return {
       "yaml",
       "markdown",
       "toml",
+      "sql",
       -- add more arguments for adding more treesitter parsers
     },
   },
