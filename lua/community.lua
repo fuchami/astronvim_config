@@ -4,7 +4,7 @@
 
 ---@type LazySpec
 return {
-  "AstroNvim/astrocommunity",
+  { "AstroNvim/astrocommunity", branch = "v6" },
 
   -- AI
   { import = "astrocommunity.completion.avante-nvim", enabled = false },
