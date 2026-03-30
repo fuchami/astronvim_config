@@ -1,18 +1,9 @@
 return {
-  "lewis6991/gitsigns.nvim",
-  dependencies = {
-    "nvim-lua/plenary.nvim",
-    {
-      "purarue/gitsigns-yadm.nvim",
-      ---@module 'gitsigns-yadm'
-      ---@type GitsignsYadm.Config
-      opts = {
-        shell_timeout_ms = 1000,
-      },
+  {
+    "Kohei-Wada/yadm-git.nvim",
+    lazy = false,
+    opts = {
+      debug = false,
     },
-  },
-  opts = {
-    _on_attach_pre = function(bufnr, callback) require("gitsigns-yadm").yadm_signs(callback, { bufnr = bufnr }) end,
-    -- other configuration for gitsigns...
   },
 }
