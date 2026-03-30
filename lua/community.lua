@@ -6,9 +6,6 @@
 return {
   { "AstroNvim/astrocommunity", branch = "v6" },
 
-  -- AI
-  { import = "astrocommunity.completion.avante-nvim", enabled = false },
-
   -- recipes
   { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
   { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
