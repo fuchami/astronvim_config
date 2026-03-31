@@ -6,8 +6,6 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocore",
-  version = false,
-  branch = "v3",
   ---@type AstroCoreOpts
   opts = {
     -- Configure core features of AstroNvim
@@ -30,7 +28,6 @@ return {
       extension = {
         -- foo = "fooscript",
         hql = "sql",
-        tpl = "sql",
       },
       filename = {
         -- [".foorc"] = "fooscript",
