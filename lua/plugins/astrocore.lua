@@ -28,7 +28,6 @@ return {
       extension = {
         -- foo = "fooscript",
         hql = "sql",
-        tpl = "sql",
       },
       filename = {
         -- [".foorc"] = "fooscript",

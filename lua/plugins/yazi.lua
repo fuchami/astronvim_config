@@ -26,7 +26,7 @@ return {
     local opts = {
       open_for_directories = false,
       keymaps = {
-        show_help = "<F1>",
+        show_help = "?",
       },
     }
 

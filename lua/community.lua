@@ -4,10 +4,7 @@
 
 ---@type LazySpec
 return {
-  "AstroNvim/astrocommunity",
-
-  -- AI
-  { import = "astrocommunity.completion.avante-nvim", enabled = false },
+  { "AstroNvim/astrocommunity" },
 
   -- recipes
   { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
@@ -31,9 +28,6 @@ return {
 
   -- icon
   { import = "astrocommunity.icon.mini-icons" },
-
-  -- lsp
-  { import = "astrocommunity.lsp.lsp-signature-nvim" },
 
   -- pack
   { import = "astrocommunity.pack.lua" },
