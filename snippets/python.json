@@ -1,0 +1,24 @@
+{
+  "Marimo Cell": {
+    "prefix": ["cell", "mo_"],
+    "body": [
+      "@app.cell",
+      "def _():",
+      "\t$0",
+      "\treturn"
+    ],
+    "description": "Create a new marimo cell"
+  },
+  "Marimo Markdown Cell": {
+    "prefix": ["cell", "mo_"],
+    "body": [
+      "@app.cell(hide_code=True)",
+      "def _(mo):",
+      "\tmo.md(r\"\"\"",
+      "\t$0",
+      "\t\"\"\")",
+      "\treturn"
+    ],
+    "description": "Create a marimo markdown cell"
+  }
+}
