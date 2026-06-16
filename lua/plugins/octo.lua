@@ -29,6 +29,7 @@ return {
         maps.n[prefix .. "i"] = { desc = "Issues" }
         maps.n[prefix .. "ic"] = { "<Cmd>Octo issue close<CR>", desc = "Close current issue" }
         maps.n[prefix .. "il"] = { "<Cmd>Octo issue list<CR>", desc = "List open issues" }
+        maps.n[prefix .. "ia"] = { "<Cmd>Octo issue list assignee=fuchami<CR>", desc = "List Assigned open issues" }
         maps.n[prefix .. "io"] = { "<Cmd>Octo issue browser<CR>", desc = "Open current issue in browser" }
         maps.n[prefix .. "ir"] = { "<Cmd>Octo issue reopen<CR>", desc = "Reopen current issue" }
         maps.n[prefix .. "iu"] = { "<Cmd>Octo issue url<CR>", desc = "Copies URL of current issue" }
