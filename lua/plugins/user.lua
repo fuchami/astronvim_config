@@ -14,7 +14,7 @@ return {
   },
   {
     "Kicamon/markdown-table-mode.nvim",
-    tf = { "markdown" },
+    ft = "markdown",
     config = function()
       require("markdown-table-mode").setup()
       vim.cmd.Mtm()
