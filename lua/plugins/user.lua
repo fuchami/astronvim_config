@@ -12,6 +12,14 @@ return {
       },
     },
   },
+  {
+    "Kicamon/markdown-table-mode.nvim",
+    tf = { "markdown" },
+    config = function()
+      require("markdown-table-mode").setup()
+      vim.cmd.Mtm()
+    end,
+  },
   -- UI
   {
     "nvim-neo-tree/neo-tree.nvim",
