@@ -77,7 +77,7 @@ end
 ---@param range integer[]|nil two line numbers; order-independent
 local function send_path(range)
   local target, file = resolve_target()
-  if not target then return end
+  if not target or not file then return end
 
   local payload = "@" .. relativize(file, target.cwd)
   if range then
