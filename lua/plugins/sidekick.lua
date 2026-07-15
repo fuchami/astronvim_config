@@ -1,4 +1,4 @@
--- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 --- https://github.com/AstroNvim/astrocommunity/blob/main/lua/astrocommunity/ai/sidekick-nvim/init.lua
 
 ---@type LazySpec

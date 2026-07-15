@@ -4,14 +4,14 @@ return {
     "3rd/image.nvim",
     build = false, -- so that it doesn't build the rock https://github.com/3rd/image.nvim/issues/91#issuecomment-2453430239
     opts = {
-      backend = "sixel", -- or "ueberzug" or "kitty"
+      backend = "kitty", -- or "ueberzug" or "kitty"
     },
   },
   {
     "3rd/diagram.nvim",
-    enabled = false,
+    enabled = true,
     dependencies = {
-      { "3rd/image.nvim", opts = {} }, -- you'd probably want to configure image.nvim manually instead of doing this
+      { "3rd/image.nvim" },
     },
     opts = { -- you can just pass {}, defaults below
       events = {
