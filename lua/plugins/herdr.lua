@@ -1,3 +1,4 @@
+---@type LazySpec
 return {
   "lmilojevicc/herdr-splits.nvim",
   -- For local development, swap the repo line for `dir = '/path/to/herdr-splits'`

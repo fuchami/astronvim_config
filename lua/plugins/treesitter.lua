@@ -18,6 +18,8 @@ return {
         "python",
         "yaml",
         "markdown",
+        "markdonw_inline",
+        "mermaid",
         "toml",
         "sql",
       },
