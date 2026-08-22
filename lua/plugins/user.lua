@@ -5,6 +5,10 @@
 return {
   -- Editor
   {
+    "bezhermoso/tree-sitter-ghostty",
+    build = "make nvim_install",
+  },
+  {
     "neogen",
     opts = {
       languages = {
