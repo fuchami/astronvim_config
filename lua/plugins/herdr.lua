@@ -41,7 +41,7 @@ return {
         -- Managed keys — written to the generated herdr-splits.conf so the
         -- Herdr-side scripts agree. Pass Neovim notation (e.g. <M-Left>).
         nav_keys = { left = "<C-h>", down = "<C-j>", up = "<C-k>", right = "<C-l>" },
-        resize_keys = { left = "<M-h>", down = "<M-j>", up = "<M-k>", right = "<M-l>" },
+        resize_keys = { left = "<C-A-h>", down = "<C-A-j>", up = "<C-A-k>", right = "<C-A-l>" },
         unzoom_on_nav = true, -- auto-unzoom when navigating away from a zoomed pane
         nav_at_edge = "wrap", -- 'wrap' | 'stop' — Herdr pane-boundary wrap (distinct from at_edge)
       }
