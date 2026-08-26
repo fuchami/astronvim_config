@@ -31,6 +31,7 @@ return {
       },
       filename = {
         -- [".foorc"] = "fooscript",
+        [".Brewfile"] = "ruby",
       },
       pattern = {
         -- [".*/etc/foo/.*"] = "fooscript",
