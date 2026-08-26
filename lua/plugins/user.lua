@@ -5,10 +5,6 @@
 return {
   -- Editor
   {
-    "bezhermoso/tree-sitter-ghostty",
-    build = "make nvim_install",
-  },
-  {
     "neogen",
     opts = {
       languages = {
@@ -27,23 +23,6 @@ return {
         log_level = "info",
         image_renderer = "kitty",
       }
-    end,
-  },
-  -- markdown
-  {
-    "MeanderingProgrammer/render-markdown.nvim",
-    ---@module 'render-markdown'
-    ---@type render.md.UserConfig
-    opts = {
-      render_modes = true,
-    },
-  },
-  {
-    "Kicamon/markdown-table-mode.nvim",
-    ft = "markdown",
-    config = function()
-      require("markdown-table-mode").setup()
-      vim.cmd.Mtm()
     end,
   },
   -- UI
@@ -77,22 +56,5 @@ return {
       ---@type false | "classic" | "modern" | "helix"
       preset = "modern",
     },
-  },
-  {
-    "DrKJeff16/wezterm-types",
-    lazy = true,
-    version = false, -- Get the latest version
-  },
-  {
-    "folke/lazydev.nvim",
-    optional = true,
-    opts = function(_, opts)
-      if not opts.library then opts.library = {} end
-
-      table.insert(opts.library, {
-        path = "wezterm-types",
-        mods = { "wezterm" },
-      })
-    end,
   },
 }
