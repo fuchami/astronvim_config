@@ -33,8 +33,11 @@ return {
   { import = "astrocommunity.pack.python.base" },
   { import = "astrocommunity.pack.python.basedpyright" },
   { import = "astrocommunity.pack.python.ruff" },
-  { import = "astrocommunity.pack.markdown", enabled = false },
-  { import = "astrocommunity.pack.sql", enabled = false },
+  { import = "astrocommunity.pack.markdown", enabled = true },
+  { import = "astrocommunity.pack.sql", enabled = true },
+  { import = "astrocommunity.pack.yaml", enabled = true },
+  { import = "astrocommunity.pack.toml", enabled = true },
+  { import = "astrocommunity.pack.json", enabled = true },
 
   -- scrolling
   { import = "astrocommunity.scrolling.nvim-scrollbar" },
