@@ -2,9 +2,9 @@
 return {
   {
     "3rd/image.nvim",
-    build = false, -- so that it doesn't build the rock https://github.com/3rd/image.nvim/issues/91#issuecomment-2453430239
+    build = false,
     opts = {
-      backend = "kitty", -- or "ueberzug" or "kitty"
+      backend = "kitty",
     },
   },
   {
@@ -13,38 +13,24 @@ return {
     dependencies = {
       { "3rd/image.nvim" },
     },
-    opts = { -- you can just pass {}, defaults below
+    opts = {
       events = {
-        render_buffer = { "InsertLeave", "BufWinEnter", "TextChanged" },
+        render_buffer = {},
         clear_buffer = { "BufLeave" },
       },
       renderer_options = {
         mermaid = {
-          background = nil, -- nil | "transparent" | "white" | "#hex"
-          theme = nil, -- nil | "default" | "dark" | "forest" | "neutral"
-          scale = 3, -- nil | 1 (default) | 2  | 3 | ...
-          width = nil, -- nil | 800 | 400 | ...
-          height = nil, -- nil | 600 | 300 | ...
-          cli_args = nil, -- nil | { "--no-sandbox" } | { "-p", "/path/to/puppeteer" } | ...
+          scale = 3,
         },
-        plantuml = {
-          charset = nil,
-          cli_args = nil, -- nil | { "-Djava.awt.headless=true" } | ...
-        },
-        d2 = {
-          theme_id = nil,
-          dark_theme_id = nil,
-          scale = nil,
-          layout = nil,
-          sketch = nil,
-          cli_args = nil, -- nil | { "--pad", "0" } | ...
-        },
-        gnuplot = {
-          size = nil, -- nil | "800,600" | ...
-          font = nil, -- nil | "Arial,12" | ...
-          theme = nil, -- nil | "light" | "dark" | custom theme string
-          cli_args = nil, -- nil | { "-p" } | { "-c", "config.plt" } | ...
-        },
+      },
+    },
+    keys = {
+      {
+        "K",
+        function() require("diagram").show_diagram_hover() end,
+        mode = "n",
+        ft = { "markdown", "norg" }, -- Only in these filetypes
+        desc = "Show diagram in new tab",
       },
     },
   },
