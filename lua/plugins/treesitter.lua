@@ -20,7 +20,7 @@ return {
           "ruby",
           "yaml",
           "markdown",
-          "markdonw_inline",
+          "markdown_inline",
           "mermaid",
           "toml",
           "sql",

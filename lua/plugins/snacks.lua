@@ -21,7 +21,16 @@ return {
       enabled = true,
     },
     ---@class snacks.gh.Config
-    gh = {},
+    gh = {
+      enabled = true,
+    },
+    ---@class snacks.image.Config
+    image = {
+      enabled = true,
+      doc = {
+        enabled = true,
+      },
+    },
     ---@class snacks.dashboard.Config
     dashboard = {
       enabled = true,
