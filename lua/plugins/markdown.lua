@@ -2,7 +2,7 @@
 return {
   {
     "MeanderingProgrammer/render-markdown.nvim",
-    ft = { "markdown", "mermaid-preview" },
+    ft = { "markdown" },
     ---@module 'render-markdown'
     ---@type render.md.UserConfig
     opts = {
@@ -14,36 +14,15 @@ return {
       pipe_table = {
         enabled = true,
       },
-      overrides = {
-        filetype = {
-          ["mermaid-preview"] = {
-            anti_conceal = { enabled = false },
-            win_options = {
-              concealcursor = { default = "nvic", rendered = "nvic" },
-            },
-          },
-        },
-      },
     },
   },
-  {
-    "iurysza/nice-mermaid.nvim",
-    ft = { "markdown" },
-    cmd = { "Mermaid" },
-    build = function(plugin)
-      local result = vim
-        .system({ "npm", "ci", "--omit=dev" }, {
-          cwd = plugin.dir .. "/bridge",
-          text = true,
-        })
-        :wait()
-      if result.code ~= 0 then error(result.stderr) end
-    end,
-    opts = {},
-    keys = {
-      { "<leader>mm", "<cmd>Mermaid toggle<cr>", desc = "Toggle Mermaid source" },
-    },
-  },
+  -- {
+  --   "kais-radwan/ascii-mermaid",
+  --   ft = { "markdown" },
+  --   opts = {
+  --     display_mode = "hybrid",
+  --   },
+  -- },
   {
     "ice345/markdown-table-wrap.nvim",
     ft = { "markdown", "quarto", "rmd" },
