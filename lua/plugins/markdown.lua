@@ -2,10 +2,11 @@
 return {
   {
     "MeanderingProgrammer/render-markdown.nvim",
-    ft = { "markdown" },
+    ft = { "markdown", "markdown.mdx" },
     ---@module 'render-markdown'
     ---@type render.md.UserConfig
     opts = {
+      file_types = { "markdown", "markdown.mdx" },
       preset = "obsidian",
       render_modes = { "n", "c", "t" },
       heading = {

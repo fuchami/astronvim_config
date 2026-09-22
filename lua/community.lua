@@ -34,6 +34,7 @@ return {
   { import = "astrocommunity.pack.python.basedpyright" },
   { import = "astrocommunity.pack.python.ruff" },
   { import = "astrocommunity.pack.markdown", enabled = true },
+  { import = "astrocommunity.pack.mdx", enabled = true },
   { import = "astrocommunity.pack.yaml", enabled = true },
   { import = "astrocommunity.pack.toml", enabled = true },
   { import = "astrocommunity.pack.json", enabled = true },
