@@ -15,10 +15,10 @@ return {
         },
       },
       heading = {
-        border = false,
+        -- border = false,
       },
       pipe_table = {
-        -- enabled = true,
+        enabled = true,
       },
     },
   },
