@@ -7,6 +7,11 @@ return {
     opts = {
       backend = "kitty",
       processor = "magick_cli",
+      integraions = {
+        markdown = {
+          enabled = false,
+        },
+      },
     },
   },
   {

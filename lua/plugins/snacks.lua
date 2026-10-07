@@ -29,6 +29,7 @@ return {
       enabled = true,
       doc = {
         enabled = true,
+        max_height = 500,
       },
     },
     ---@class snacks.dashboard.Config

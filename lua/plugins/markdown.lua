@@ -9,11 +9,16 @@ return {
       file_types = { "markdown", "markdown.mdx" },
       preset = "obsidian",
       render_modes = { "n", "c", "t" },
+      html = {
+        comment = {
+          conceal = false,
+        },
+      },
       heading = {
-        border = true,
+        border = false,
       },
       pipe_table = {
-        enabled = true,
+        -- enabled = true,
       },
     },
   },
@@ -97,6 +102,14 @@ return {
     config = function()
       require("markdown-table-mode").setup()
       vim.cmd.Mtm()
+    end,
+  },
+  {
+    "nwiizo/marp.nvim",
+    config = function()
+      require("marp").setup {
+        -- Optional overrides
+      }
     end,
   },
 }
