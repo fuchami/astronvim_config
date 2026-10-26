@@ -76,19 +76,11 @@ return {
 
         -- herdr: send the current file path to the first coding agent in this tab
         ["<Leader>h"] = { desc = "󰳆 herdr" },
-        ["<Leader>hf"] = {
-          function() require("utils.herdr").send_file_to_agent() end,
-          desc = "Send file path to herdr agent",
-        },
       },
       -- visual mode mappings
       x = {
         -- herdr: send file path + selected line range, e.g. @path#L10-22
         ["<Leader>h"] = { desc = "󰳆 herdr" },
-        ["<Leader>hl"] = {
-          function() require("utils.herdr").send_selection_to_agent() end,
-          desc = "Send file path + line range to herdr agent",
-        },
       },
     },
   },

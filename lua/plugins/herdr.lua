@@ -1,6 +1,12 @@
 ---@type LazySpec
 return {
   {
+    "ChmaraX/herdr-nvim",
+    opts = {
+      prefix = "<leader>h",
+    },
+  },
+  {
     "lmilojevicc/herdr-splits.nvim",
     -- For local development, swap the repo line for `dir = '/path/to/herdr-splits'`
     -- (see "Local development" below).
